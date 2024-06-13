@@ -228,7 +228,7 @@
 % usage: \address{<street>}{<city>}{<country>}
 % where the <city> and <country> arguments can be omitted or provided empty
 \NewDocumentCommand{\address}{mG{}G{}}{\def\@addressstreet{#1}\def\@addresscity{#2}\def\@addresscountry{#3}}
-
+\newcommand*{\senderline}{\@firstname~\@lastname~\@addressstreet~\@addresscity}
 % defines one's birthday (optional)
 % usage: \born{date, place}
 \newcommand*{\born}[1]{\def\@born{#1}}
